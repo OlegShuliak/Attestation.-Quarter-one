@@ -62,5 +62,9 @@ Print1DArr(userArray);
 
 // Ссоздание и вывод массива с выборкой строк
 string[] finalArray = StrUpTo3Signs(userArray);
-Console.Write($"Массив с выборкой строк, длина которых меньше, либо равна 3 символам: ");
-Print1DArr(finalArray);
+if (finalArray.Length == 0) Console.WriteLine("В вашем массиве нет строк, длина которых меньше, либо равна 3 символам.");
+else
+{
+    Console.Write($"Массив с выборкой строк, длина которых меньше, либо равна 3 символам: ");
+    Print1DArr(finalArray);
+}
